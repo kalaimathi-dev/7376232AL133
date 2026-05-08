@@ -6,12 +6,12 @@ const AUTH_URL = "http://4.224.186.213/evaluation-service/auth";
 
 // Simple placeholder values to make the request valid for testing
 const authPayload = {
-  email: "student@example.com",
-  name: "Student Name",
-  rollNo: "CS001",
-  accessCode: "YOUR_ACCESS_CODE",
-  clientID: "YOUR_CLIENT_ID",
-  clientSecret: "YOUR_CLIENT_SECRET"
+    "email": "kalaimathi.al23@bitsathy.ac.in",
+    "name": "kalaimathi",
+    "rollNo": "7376232al133",
+    "accessCode": "uKaJfm",
+    "clientID": "ac6336f7-d35f-42d2-8874-32cdf47a3218",
+    "clientSecret": "syJdrFuPbfAKznVY"
 };
 
 export async function requestNewToken() {
