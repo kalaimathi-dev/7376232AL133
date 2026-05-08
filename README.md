@@ -36,10 +36,6 @@ Inside notification_app_fe/src:
 - A shared Log function sends stack, level, package, and message to the logs API.
 - Used across page load, API calls, filters, search, pagination, and read events.
 
-## Screenshots
-- Dashboard: [Add screenshot here]
-- Details page: [Add screenshot here]
-
 ## Scalability Notes
 - API calls are centralized in services for easy extension.
 - The hook can be expanded to support caching or background refresh.
