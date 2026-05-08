@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fb;
+  color: #1d1d1f;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.card-unread {
+  border-left: 4px solid #1976d2;
+  background: #ffffff;
+}
+
+.card-read {
+  border-left: 4px solid transparent;
+  background: #f9f9fb;
+}
+
+.priority-box {
+  background: #fff4e5;
+  border: 1px solid #ffd79a;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+}
