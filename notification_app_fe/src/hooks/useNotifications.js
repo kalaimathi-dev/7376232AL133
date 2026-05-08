@@ -7,6 +7,7 @@ function getType(notification) {
     notification.notification_type ||
     notification.type ||
     notification.category ||
+    notification.Type ||
     "Event"
   );
 }
@@ -16,6 +17,7 @@ function getMessage(notification) {
     notification.message ||
     notification.notification_message ||
     notification.text ||
+    notification.Message ||
     ""
   );
 }
@@ -26,12 +28,17 @@ function getTimestamp(notification) {
     notification.time ||
     notification.created_at ||
     notification.createdAt ||
+    notification.Timestamp ||
     ""
   );
 }
 
 function getNotificationKey(notification) {
-  const id = notification.id || notification._id || notification.notificationId;
+  const id =
+    notification.id ||
+    notification._id ||
+    notification.notificationId ||
+    notification.ID;
   if (id) {
     return String(id);
   }
